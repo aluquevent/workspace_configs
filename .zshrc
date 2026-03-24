@@ -14,6 +14,13 @@ alias ccv="cc -Wall -Werror -Wextra"
 
 export MYVIMRC=$HOME/.vimrc
 
+PATH=$HOME/.local/bin:$PATH
+export PATH="$PATH:$HOME/.local/bin/nvim-linux-x86_64/bin"
+USER=aluque-v
+MAIL=aluque-v@student.42barcelona.com
+export USER
+export MAIL
+
 # Terminal title: show command when running, directory when idle
 preexec() {
   print -Pn "\e]0;${1%% *}\a"
